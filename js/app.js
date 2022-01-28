@@ -8,3 +8,14 @@ $(document).ready(function () {
     });  
     
 });
+
+const triggers = document.querySelectorAll('.menu-trigger');
+
+for(let i = 0;i<triggers.length;i++){
+  triggers[i].addEventListener('click',function(e){
+    e.preventDefault();
+    // default action of click on any link is disabled
+    this.classList.toggle('is-open')
+    //we will add color for the class is-open after clicked one
+  });
+}

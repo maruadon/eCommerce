@@ -28,3 +28,57 @@
     flex-direction:column;
     align-items: center;
 }
+.upto{
+    position:relative;
+}
+/* this is for creating underline */
+.upto:after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-1rem;
+    height:4px;
+    width:80%;
+    background:#F52E17;
+}
+.sub-menu{
+    max-height:0;
+    overflow:hidden;
+} 
+.menu-trigger.is-open{
+    color:#F52E17;
+}
+/* this is for hiding the submenu */
+.menu-trigger.is-open + .sub-menu{
+    max-height:100%;
+    overflow:visible;
+}
+.box-1{
+    position:relative;
+    height:28rem;
+}
+.box-1 img{
+    position:absolute;
+    top:-5rem;
+}
+.box-4{
+    position:relative;
+    height:22rem;
+    margin-top:18rem;
+}
+.box-4 img{
+    position:absolute;
+    top:-14rem;
+    left:15%;
+}
+.box-5{
+    position:relative;
+    height:20rem;
+    width:100%;
+    margin-bottom:12rem;
+}
+.box-5 img{
+    position:absolute;
+    bottom:-8rem;
+}
+
