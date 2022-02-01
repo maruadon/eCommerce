@@ -5,12 +5,13 @@
 .move_right{
     left:41%;
 }
+
 .slider_dots{
     right:-2.5rem;
     top:50%;
     transform:translateY(-50%);
 }
-.slider_dots button{
+.slider_dots button, .slider2-dots button{
     font-size:0;
     width:8px;
     height:8px;
@@ -18,7 +19,7 @@
     border-radius:50%;
     outline:none;
 }
-.slider_dots li.slick-active button{
+.slider_dots li.slick-active button, .slider2-dots li.slick-active button{
     background:#FE7865;
     width:12px;
     height:12px;
@@ -106,5 +107,38 @@
 }
 .agree_checkbox:checked + label:before{
     background: #FE7865;
+}
+.slick-slide.slick-center .inner_box{
+    padding:0 20px;
+}
+.slider2{
+    margin-left:-50%;
+    margin-right:-50%;
+}
+.slick-slide.slick-center .inner_box > div{
+    padding:50px 0;
+}
+.slick-slide:not(.slick-center){
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.slick-slider .inner_box .label,.slick-slider .inner_box .number{
+    display:none;
+}
+.slick-slide.slick-center .inner_box .label,.slick-slide.slick-center .inner_box .number{
+    display:block;
+}
+.slider2-dots{
+    position:absolute;
+    bottom:-20%;
+    left:50%;
+    transform:translateX(-50%);
+}
+.slider2-dots ul{
+    display:flex;
+    align-items:center
+}
+.slider2-dots ul li{
+    margin-right:20px;
 }
 
